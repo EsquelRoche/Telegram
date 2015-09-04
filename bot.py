@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import urllib2
 import time
 import os
@@ -36,7 +38,7 @@ def run_command(chat_id,text):
         if len(text.split(" ")) > 1:
             data = {"chat_id":str(chat_id),"text":"Create PDF"}
             opener.open(URL + TOKEN + '/sendMessage',data)
-            
+
             link = getPDF.getPDF(text.split(" ")[-1])
 
 

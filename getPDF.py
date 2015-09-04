@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from weasyprint import HTML
 import requests
 import os
